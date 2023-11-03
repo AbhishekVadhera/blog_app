@@ -11,6 +11,7 @@ class PostAdmin(admin.ModelAdmin):
     prepopulated_fields = {
         'slug': ('title',)
     }
-    ordering = ['status','publish']
+    ordering = ['status', 'publish']
+
 
 admin.site.register(Post, PostAdmin)
